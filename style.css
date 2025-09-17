@@ -1,0 +1,242 @@
+/* Reset e fontes */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f4f1ed; /* tom aconchegante */
+  color: #2c2c2c;
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  color: #c24c30;
+}
+
+a:hover {
+  color: #f19e01;
+}
+
+/* Cabeçalho */
+header {
+  position: fixed; /* Fixar no topo */
+  top: 0;           /* Grudar no topo */
+  left: 0;          /* Alinhar à esquerda */
+  width: 100%;      /* Ocupar toda a largura */
+  z-index: 1000;    /* Garantir que fique acima dos outros elementos */
+  background-color: #dbdadc;
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+main {
+  padding-top: 130px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.logo img {
+  height: 80px; /* logo maior */
+}
+
+.logo h1 {
+  font-size: 2rem;
+  color: #c24c30;
+  font-weight: 700;
+}
+
+nav a {
+  margin-left: 25px;
+  font-weight: 700;
+  font-size: 1.1rem;
+  transition: color 0.3s;
+}
+
+/* Seções gerais */
+section {
+  padding: 60px 40px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+h2 {
+  font-size: 2.4rem;
+  color: #c24c30;
+  margin-bottom: 25px;
+  font-weight: 700;
+  border-left: 8px solid #f19e01;
+  padding-left: 15px;
+}
+
+p, ul {
+  font-size: 1.15rem;
+  color: #333;
+  max-width: 850px;
+  font-weight: 500;
+  line-height: 1.8;
+}
+
+/* Sobre */
+.sobre-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 50px;
+}
+
+.sobre-container .texto {
+  flex: 1 1 450px;
+}
+
+.foto-arquiteta img {
+  width: 320px; /* maior foto */
+  height: auto;
+  border-radius: 15px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+}
+
+/* Missão, Visão, Valores */
+#missao, #visao, #valores {
+  background-color: #ffffff;
+  border-radius: 15px;
+  margin-top: 35px;
+  padding: 45px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.08);
+}
+
+/* Projetos com rolagem */
+#projetos {
+  position: relative;
+  margin-top: 50px;
+}
+
+.galeria {
+  display: flex;
+  overflow-x: auto;
+  gap: 25px;
+  padding: 25px 0;
+  scroll-behavior: smooth;
+  scroll-padding: 20px;
+  scrollbar-width: none; /* Firefox */
+}
+
+.galeria::-webkit-scrollbar {
+  display: none; /* Chrome, Safari e Opera */
+}
+
+.projeto {
+  min-width: 500px;
+  flex: 0 0 auto;
+  background-color: #fff;
+  padding: 22px;
+  border-radius: 15px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  font-weight: 600;
+}
+
+.projeto:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.projeto h3 {
+  margin-bottom: 12px;
+  color: #c24c30;
+  font-weight: 700;
+}
+
+.projeto .descricao {
+  color: #666;
+  font-weight: 400;
+}
+
+/* Botões das setas */
+.seta-esquerda,
+.seta-direita {
+  position: absolute;
+  top: 60%;
+  transform: translateY(-50%);
+  font-size: 1.5rem;
+  background-color: #f19e01;
+  color: white;
+  padding: 12px 18px;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 10;
+  user-select: none;
+  border: none;
+  transition: background-color 0.3s;
+}
+
+.seta-esquerda:hover,
+.seta-direita:hover {
+  background-color: #c24c30;
+}
+
+.seta-esquerda { left: -15px; }
+.seta-direita { right: -15px; }
+
+/* Contato */
+#contato a {
+  display: inline-block;
+  margin-top: 10px;
+  font-weight: 700;
+  color: #c24c30;
+}
+
+/* Rodapé */
+footer {
+  text-align: right;
+  padding: 35px;
+  background-color: #dbdadc;
+  margin-top: 70px;
+  font-size: 1rem;
+  color: #666;
+}
+
+/* Responsivo */
+@media (max-width: 900px) {
+  .sobre-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+  }
+
+  .logo img {
+    height: 65px;
+  }
+
+  h2 {
+    font-size: 1.8rem;
+  }
+
+  .foto-arquiteta img {
+    width: 90%;
+    max-width: 320px;
+  }
+
+  .seta-esquerda,
+  .seta-direita {
+    font-size: 2rem;
+    padding: 10px 14px;
+    left: 5px;
+    right: 5px;
+  }
+}

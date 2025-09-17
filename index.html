@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfólio de Arquitetura</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- Google Fonts: Poppins para modernidade -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="imagens/Logo.png" alt="Logo" />
+      <h1>Amanda Garcia Arquitetura</h1>
+    </div>
+    <nav>
+      <a href="#sobre">Sobre</a>
+      <a href="#projetos">Projetos</a>
+      <a href="#contato">Contato</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="sobre">
+      <div class="sobre-container">
+        <div class="texto">
+          <h2>Sobre</h2>
+          <p>Meu nome é Amanda Garcia De Martin, sou estudante de Arquitetura e Urbanismo pela Universidade Federal Fluminense (UFF) e atuo há dois anos na área, por meio de estágios em escritórios e projetos diversos. Nesse período, desenvolvi habilidades práticas em levantamento de medidas para projetos As Built, desenvolvimento de projetos executivos e detalhamentos, pesquisa de materiais e contato com fornecedores, modelagem 3D com renderização, acompanhamento de obras e elaboração de planilhas e relatórios técnicos. Tenho interesse em aprofundar meus conhecimentos em projeto arquitetônico, visualização 3D e execução de obras, sempre buscando aliar criatividade e precisão técnica.</p>
+        </div>
+        <div class="foto-arquiteta">
+          <img src="imagens/FotoArquiteta.png.png" alt="Foto da Arquiteta" />
+        </div>
+      </div>
+    </section>
+
+    <section id="missao">
+      <h2>Missão</h2>
+      <p>Tornar a arquitetura mais acessível, aproximando as pessoas do processo criativo e técnico, e desmistificando a complexidade dos projetos arquitetônicos.</p>
+    </section>
+
+    <section id="visao">
+      <h2>Visão</h2>
+      <p>Ser um escritório de referência em Niterói, reconhecido pela qualidade, proximidade com o cliente e soluções arquitetônicas inteligentes.</p>
+    </section>
+
+    <section id="valores">
+      <h2>Valores</h2>
+      <p>Acolhimento em cada etapa do processo, compromisso com a qualidade e foco na funcionalidade e viabilidade dos projetos.</p>
+    </section>
+
+    <section id="projetos">
+      <h2>Projetos</h2>
+      <button class="seta-esquerda">&#8592;</button>
+      <div class="galeria">
+        <div class="projeto" onclick="abrirProjeto(this)">
+          <h3>Projeto 1</h3>
+          <p class="descricao">Clique para ver detalhes</p>
+        </div>
+        <div class="projeto" onclick="abrirProjeto(this)">
+          <h3>Projeto 2</h3>
+          <p class="descricao">Clique para ver detalhes</p>
+        </div>
+        <div class="projeto" onclick="abrirProjeto(this)">
+          <h3>Projeto 3</h3>
+          <p class="descricao">Clique para ver detalhes</p>
+        </div>
+        <div class="projeto" onclick="abrirProjeto(this)">
+          <h3>Projeto 4</h3>
+          <p class="descricao">Clique para ver detalhes</p>
+        </div>
+        <!-- Pode adicionar mais projetos aqui -->
+      </div>
+      <button class="seta-direita">&#8594;</button>
+    </section>
+
+    <section id="contato">
+      <h2>Contato</h2>
+      <p>Email: <a href="mailto:amandagarcia.arquitetura@gmail.com">amandagarcia.arquitetura@gmail.com</a></p>
+      <p>Instagram: <a href="https://www.instagram.com/amandagarcia_arq/" target="_blank" rel="noopener">@amandagarcia_arq</a></p>
+      <p>Whatsapp: <a href="https://wa.me/qr/CB776CRTKZGNB1" target="_blank" rel="noopener"> 21 99653-2002</a></p>   
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 - Portfólio de Arquitetura</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
